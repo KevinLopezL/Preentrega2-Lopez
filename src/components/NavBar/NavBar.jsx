@@ -3,19 +3,19 @@ import './NavBar.css'
 import { NavLink, Link } from "react-router-dom";
 
 const NavBar = () => {
-  const imgMarolio = "https://www.marolio.com.ar/sites/all/themes/theme1043/logo.png";
+  const imgComic = "../img/logo.png";
   return (
     <header>
       <Link to={"/"}>
-        <img className="imgMarolio" src={imgMarolio} alt="Logo Marolio" />
+        <img className="imgComic" src={imgComic} alt="Logo Comic" />
       </Link>
       <ul>
         <li>
-          <NavLink to={`/categoria/2`}>Almacén</NavLink>
+          <NavLink to={`/categoria/2`}>Comics</NavLink>
         </li>
 
         <li>
-          <NavLink to={`/categoria/3`} >Lácteos</NavLink>
+          <NavLink to={`/categoria/3`} >Accesorios</NavLink>
         </li>
       </ul>
       <CartWidget />
